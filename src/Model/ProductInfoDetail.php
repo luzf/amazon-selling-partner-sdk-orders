@@ -2,7 +2,7 @@
 
 namespace Amz\Orders\Model;
 
-use OpenAPI\Runtime\AbstractModel as AbstractModel;
+use OpenAPI\Runtime\AbstractModel;
 
 /**
  * Product information on the number of items.

@@ -5,9 +5,9 @@ namespace Amz\Orders\Model;
 use OpenAPI\Runtime\AbstractModel;
 
 /**
- * A single order item's buyer information list.
+ * The verification status of the order.
  */
-class OrderItemBuyerInfoList extends AbstractModel
+class VerificationStatus extends AbstractModel
 {
     protected $isRawObject = true;
 }

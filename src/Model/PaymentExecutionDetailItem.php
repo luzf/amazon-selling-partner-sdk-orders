@@ -2,7 +2,7 @@
 
 namespace Amz\Orders\Model;
 
-use OpenAPI\Runtime\AbstractModel as AbstractModel;
+use OpenAPI\Runtime\AbstractModel;
 
 /**
  * Information about a sub-payment method used to pay for a COD order.

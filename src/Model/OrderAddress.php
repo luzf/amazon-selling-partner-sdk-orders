@@ -2,7 +2,7 @@
 
 namespace Amz\Orders\Model;
 
-use OpenAPI\Runtime\AbstractModel as AbstractModel;
+use OpenAPI\Runtime\AbstractModel;
 
 /**
  * The shipping address for the order.

@@ -5,19 +5,20 @@ namespace Amz\Orders\Model;
 use OpenAPI\Runtime\AbstractModel;
 
 /**
- * The response schema for the getOrderBuyerInfo operation.
+ * The response schema for the getOrderRegulatedInfo operation.
  */
-class GetOrderBuyerInfoResponse extends AbstractModel
+class GetOrderRegulatedInfoResponse extends AbstractModel
 {
     /**
      * The payload for the getOrderBuyerInfo operations.
      *
-     * @var \Amz\Orders\Model\OrderBuyerInfo
+     * @var \Amz\Orders\Model\OrderRegulatedInfo
      */
     public $payload = null;
 
     /**
-     * One or more unexpected errors occurred during the getOrderBuyerInfo operation.
+     * One or more unexpected errors occurred during the getOrderRegulatedInfo
+     * operation.
      *
      * @var \Amz\Orders\Model\ErrorList
      */

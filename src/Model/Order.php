@@ -2,7 +2,7 @@
 
 namespace Amz\Orders\Model;
 
-use OpenAPI\Runtime\AbstractModel as AbstractModel;
+use OpenAPI\Runtime\AbstractModel;
 
 /**
  * Order information.
@@ -282,12 +282,36 @@ class Order extends AbstractModel
     public $IsSoldByAB = null;
 
     /**
+     * When true, the item within this order was bought and re-sold by Amazon Business
+     * EU SARL (ABEU). By buying and instantly re-selling your items, ABEU becomes the
+     * seller of record, making your inventory available for sale to customers who
+     * would not otherwise purchase from a third-party seller.
+     *
+     * @var bool
+     */
+    public $IsIBA = null;
+
+    /**
      * The recommended location for the seller to ship the items from. It is calculated
      * at checkout. The seller may or may not choose to ship from this location.
      *
      * @var \Amz\Orders\Model\Address
      */
     public $DefaultShipFromLocationAddress = null;
+
+    /**
+     * The buyer's invoicing preference. Available only in the TR marketplace.
+     *
+     * @var string
+     */
+    public $BuyerInvoicePreference = null;
+
+    /**
+     * Contains the business invoice tax information.
+     *
+     * @var \Amz\Orders\Model\BuyerTaxInformation
+     */
+    public $BuyerTaxInformation = null;
 
     /**
      * Contains the instructions about the fulfillment like where should it be
@@ -304,6 +328,15 @@ class Order extends AbstractModel
      * @var bool
      */
     public $IsISPU = null;
+
+    /**
+     * When true, this order is marked to be delivered to an Access Point. The access
+     * location is chosen by the customer. Access Points include Amazon Hub Lockers,
+     * Amazon Hub Counters, and pickup points operated by carriers.
+     *
+     * @var bool
+     */
+    public $IsAccessPointOrder = null;
 
     /**
      * Tax information about the marketplace.
@@ -328,4 +361,21 @@ class Order extends AbstractModel
      * @var \Amz\Orders\Model\BuyerInfo
      */
     public $BuyerInfo = null;
+
+    /**
+     * Contains information regarding the Shipping Settings Automaton program, such as
+     * whether the order's shipping settings were generated automatically, and what
+     * those settings are.
+     *
+     * @var \Amz\Orders\Model\AutomatedShippingSettings
+     */
+    public $AutomatedShippingSettings = null;
+
+    /**
+     * Whether the order contains regulated items which may require additional approval
+     * steps before being fulfilled.
+     *
+     * @var bool
+     */
+    public $HasRegulatedItems = null;
 }

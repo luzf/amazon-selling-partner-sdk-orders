@@ -5,9 +5,9 @@ namespace Amz\Orders\Model;
 use OpenAPI\Runtime\AbstractModel;
 
 /**
- * A single order item's buyer information list.
+ * the unobfuscated marketplace ID.
  */
-class OrderItemBuyerInfoList extends AbstractModel
+class MarketplaceId extends AbstractModel
 {
     protected $isRawObject = true;
 }

@@ -5,9 +5,9 @@ namespace Amz\Orders\Model;
 use OpenAPI\Runtime\AbstractModel;
 
 /**
- * A single order item's buyer information list.
+ * the status of the shipment of the order to be updated.
  */
-class OrderItemBuyerInfoList extends AbstractModel
+class ShipmentStatus extends AbstractModel
 {
     protected $isRawObject = true;
 }

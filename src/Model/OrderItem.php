@@ -2,7 +2,7 @@
 
 namespace Amz\Orders\Model;
 
-use OpenAPI\Runtime\AbstractModel as AbstractModel;
+use OpenAPI\Runtime\AbstractModel;
 
 /**
  * A single order item.
@@ -257,4 +257,11 @@ class OrderItem extends AbstractModel
      * @var \Amz\Orders\Model\ItemBuyerInfo
      */
     public $BuyerInfo = null;
+
+    /**
+     * Information about whether or not a buyer requested cancellation.
+     *
+     * @var \Amz\Orders\Model\BuyerRequestedCancel
+     */
+    public $BuyerRequestedCancel = null;
 }
