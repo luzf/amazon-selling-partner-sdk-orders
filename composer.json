@@ -10,7 +10,7 @@
     }
   ],
   "require": {
-    "allansun/openapi-runtime": "^2.1"
+    "allansun/openapi-runtime": "^3"
   },
   "require-dev": {
     "allansun/openapi-code-generator": "^0.2.5",
