@@ -1,5 +1,5 @@
 {
-  "name": "bricre/amazon-selling-partner-sdk-orders",
+  "name": "luzf/amazon-selling-partner-sdk-orders",
   "description": "API client generated from OpenAPI definition from Amazon Selling Partner API for Orders",
   "minimum-stability": "stable",
   "license": "Apache-2.0",
@@ -10,7 +10,7 @@
     }
   ],
   "require": {
-    "allansun/openapi-runtime": "^2.1"
+    "allansun/openapi-runtime": "^3"
   },
   "require-dev": {
     "allansun/openapi-code-generator": "^0.2.5",
